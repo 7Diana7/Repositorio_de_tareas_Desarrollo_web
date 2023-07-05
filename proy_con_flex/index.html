@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_flex.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navegacion">
+        <h1 class="logo">NewComunication</h1>
+        <ul class="botonera">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#chat">Chat</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+        </ul>
+    </nav>
+    <header id="home">
+        <div class="User">
+            <div class="User-texto">
+                <h1>Home</h1>
+            </div>
+            <div class="profile-image-container">
+                <img class="profile-image" src="img/default-user-image.png">
+                <ul id="bottom">
+                    <input type="file" id="image-input">
+                    <button id="change-image-button">Cambiar imagen</button>
+                    <script src="boton-perfil.js"></script>
+                </ul>
+                <h1 class="User-item-texto">You</h1>
+                <ul id="friend-list">
+                    <p>Total de amigos: <span id="friend-count"></span></p>
+                    <script src="friends_count.js"></script>
+                  </ul>
+                <ul id="friend-list">
+                    <img class="friends-img" src="img/default-user-image.png">
+                    <img class="friends-img" src="img/default-user-image.png">
+                    <img class="friends-img" src="img/default-user-image.png">
+                    <!-- Agrega más elementos <li> para cada amigo -->
+                </ul>
+            </div>
+        </div>
+    </header>
+    <article class="activity">
+        <aside id="chat">
+            <h1 class="chatito">Chat</h1>
+            <div>
+                <title>Chat</title>
+                <style>
+                  #chat-container {
+                    height: 300px;
+                    border: 1px solid #ccc;
+                    overflow-y: scroll;
+                    padding: 10px;
+                  }
+              
+                  #message-input {
+                    width: 100%;
+                    margin-top: 10px;
+                  }
+                </style>
+              </head>
+              <body>
+                <div id="chat-container"></div>
+                <input type="text" id="message-input" placeholder="Escribe tu mensaje..." />
+                <button id="send-button">Enviar</button>
+              
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+                <script src="chat.js"></script>
+              </body>
+            </div>
+        </aside>
+        <aside id="videos">
+            <div class="galeria">
+                <div class="galeria-item">
+                    <div class="video-container">
+                        <video src="video1.mp4" controls></video>
+                        <div class="galeria-item-texto">
+                            <h2>Título del Video 1</h2>
+                            <p>Descripción del Video 1</p>
+                        </div>
+                    </div>
+                    <div class="video-container">
+                        <video src="video1.mp4" controls></video>
+                        <div class="galeria-item-texto">
+                            <h2>Título del Video 1</h2>
+                            <p>Descripción del Video 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </article>
+
+    <article>
+        <section>
+            <div class="experiences">
+                <div class="clubs-block">
+                    <img class="clubs" src="img/gamersclub.jpg">
+                    <div class="galeria-item-texto">
+                        <li><h4>GamersClub</h4></li>
+                    </div>
+                </div>
+
+                <div class="clubs-block">
+                    <img class="clubs" src="img/gamersclub.jpg">
+                    <div class="galeria-item-texto">
+                        <li><h4>GamersClub</h4></li>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main>
+            <h1>Galería de fotos</h1>
+        
+            <div class="gallery">
+              <div class="photo">
+                <img src="foto1.jpg" alt="Foto 1">
+              </div>
+              <div class="photo">
+                <img src="foto2.jpg" alt="Foto 2">
+              </div>
+              <!-- Agrega más elementos <div> con clase "photo" para cada foto -->
+            </div>
+          </main>
+        
+          <footer>
+            <!-- Aquí puedes colocar el pie de página de tu página -->
+          </footer>
+    </article>
+    <footer id="ubicacion">
+        <img class="camion" src="img/food-truck.png">
+        <h3 class="creditos">Creador: Anonimous D</h3>
+        <h3 class="creditos">Ayuda: ???</h3>
+    </footer>
+</body>
+</html>
