@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: yellow;
+}
+
+h2, h3, h4, h5, p, span, ul{
+    font-family: 'Jost', sans-serif;
+    
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Barra de navegacion */
+.navegacion{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: #212121;
+    gap: 30px;
+    width: 100%;
+    /* position: fixed;
+    width: 100%; podemos ver esto en clase ;)*/
+}
+
+.botonera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 48, 48);
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.botonera li{
+    padding:10px;
+}
+
+.botonera li a{
+    text-decoration: none;
+    color:yellow;
+}
+
+/* Home */
+#home{
+    display: flex;
+    justify-content: flex-start;
+    padding: 80px;
+    background-color: #121212;
+    background-size: cover;
+}
+/* Menu */
+#chat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    padding:100px;
+}
+
+.User{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+ }
+
+.User-texto{
+    display: flex;
+    padding: 1% 50%;
+}
+
+.profile-image-container{
+    display: flex;
+    align-items: center;
+}
+
+.profile-image{
+    border-radius: 10%;
+    width: 20%;
+}
+.User-item-texto{
+    padding: 1% 4%;
+    color: rgb(209, 209, 209);
+    
+}
+
+
+.galeria{
+    display: flex;
+    flex-direction: row-reverse;
+ }
+
+.galeria-item{
+    background-color: rgb(232, 232, 232);
+    margin:10px;
+}
+.video-container{
+    width: 100%;
+}
+.galeria-item-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Chef */
+#videos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3%;
+    background-color: #212121;
+    flex-direction: row;
+}
+.chef-descripcion{
+    width: 500px;
+    font-size:36px;
+    line-height: 46px;
+    text-align: justify;
+}
+.texto-destacado{
+    text-decoration: underline;
+    color: #27C009;
+    border-top: solid 3px #27C009;
+    padding-top:5px;
+}
+/* Ubicacion */
+#ubicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    padding:20px;
+}
+
+.creditos{
+    color:white;
+}
+
+.camion{
+    width: 150px;
+}
+
+.activity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: #212121;
+}
+
+.chatito{
+    font-family: 'Josefin Sans', sans-serif;
+    color: yellow;
+    font-size: 50px;
+}
+
+
+.experiences{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    gap: 10px;
+    background-color: #4d4d4d;
+    padding: 5% 5%;
+}
+
+.clubs-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.clubs{
+    display: flex;
+    padding: 5% 5%;
+    width: 50%;
+    background-color: rgb(209, 209, 209);
+}
+
+.clubs-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#friend-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: rgb(209, 209, 209);
+    padding-right: 5%;
+  }
+  
+#friend-list li {
+    margin-bottom: 5px;
+  }
+  
+#friend-count {
+    font-weight: bold;
+  }
+
+.friends-img{
+    display: flex;
+    border-radius: 100%;
+    width: 10%;
+    padding: 3px;
+    align-self: flex-start;
+}
+
+input[type="file"] {
+    display: none;
+  }
+  
+button {
+    display: block;
+    margin: 10px auto;
+}
+
+#bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
