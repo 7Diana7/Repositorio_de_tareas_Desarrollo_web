@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+
+h1 {
+    text-align:Center;
+    color: white; /* El color de la cabecera */
+    font-size: 45px; /* El tamaño de la fuente de la cabecera */
+    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+    font-family: 'Jost', sans-serif;
+}
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(7, 7, 52);
+}
+
+.Cabesero{
+  display:flex;
+  align-self: flex-start;
+  justify-content: space-around;
+}
+
+.Logo{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(9, 49, 128);
+}
+
+.Widget{
+  display:flex;
+  justify-content: center;
+  flex-direction: row
+}
+
+.w{
+  display:flex;
+  align-self: center;
+  background-color: rgb(15, 15, 84);
+  padding: 10px;
+}
+
+.w1{
+  display:flex;
+  align-self: flex-end;
+  background-color: rgb(15, 15, 84);
+  padding: 10px;
+}
